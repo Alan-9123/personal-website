@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal website for Alan Sun" />
+    <title>Alan Sun — Personal Site</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+        <a class="logo" href="#home">AS<span>.</span></a>
+        <nav aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Connect</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <p class="eyebrow">HELLO, I’M</p>
+        <h1>Alan<br /><em>Sun.</em></h1>
+        <p class="intro">I’m a curious student and builder interested in engineering, design, and creating useful digital experiences.</p>
+        <a class="button" href="#about">Get to know me <span>↓</span></a>
+        <div class="flight-demo" aria-label="Animated drone flight around a circular route">
+          <div class="hero-orb" aria-hidden="true"></div>
+          <svg class="flight-path" viewBox="0 0 440 440" aria-hidden="true">
+            <circle cx="220" cy="220" r="214" pathLength="100"></circle>
+          </svg>
+          <div class="drone" aria-hidden="true">
+            <i class="arm arm-a"></i><i class="arm arm-b"></i>
+            <i class="rotor rotor-a"></i><i class="rotor rotor-b"></i><i class="rotor rotor-c"></i><i class="rotor rotor-d"></i>
+            <i class="drone-body"></i>
+          </div>
+          <p class="flight-label">AUTONOMOUS ROUTE <span>●</span> LIVE</p>
+          <div class="flight-controls">
+            <button class="flight-toggle" type="button" aria-pressed="false">Pause flight</button>
+            <button class="blast-toggle" type="button">Launch blast</button>
+          </div>
+          <div class="missile" aria-hidden="true"><i></i></div>
+          <div class="blast" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <p class="eyebrow">01 / ABOUT</p>
+        <div>
+          <h2>Making things with clarity, curiosity, and a little personality.</h2>
+          <p>I like learning fast, working through interesting problems, and making the final result feel simple. This is my little corner of the internet.</p>
+        </div>
+      </section>
+
+      <section class="projects section" id="projects">
+        <p class="eyebrow">02 / PROJECTS</p>
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-number">01</div>
+            <div class="project-content">
+              <p class="project-type">STUDENT ENGINEERING · CODING MINDS ACADEMY</p>
+              <h3>Amphibious Air<br />and Land Vehicle</h3>
+              <p>A remote-controlled vehicle project exploring independent land, air, and future water systems. The current focus is safe assembly and bench preparation—not flight testing.</p>
+              <a class="project-link" href="https://github.com/Alan-9123/Amphibious-Air-and-Land-Vehicle" target="_blank" rel="noreferrer">View project on GitHub <span>↗</span></a>
+            </div>
+          </article>
+          <article class="project-card tank-card">
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <p class="project-type">GAME DESIGN · JAVASCRIPT</p>
+              <h3>Iron Horizon<br />Tank Duel</h3>
+              <p>A turn-based tank game with a tactical aiming interface, selectable artillery, terrain, wind, and a projectile trajectory system.</p>
+            </div>
+            <img src="tank.png" alt="Iron Horizon tank game interface showing two tanks on a mountain battlefield" />
+          </article>
+        </div>
+      </section>
+
+      <section class="build section" id="build">
+        <p class="eyebrow">03 / CURRENT BUILD</p>
+        <div>
+          <h2>A bench-safe foundation for an ambitious idea.</h2>
+          <div class="build-grid">
+            <article><small>AIRFRAME</small><b>Holybro X650</b><span>On hand</span></article>
+            <article><small>FLIGHT CONTROL</small><b>Pixhawk 6C</b><span>On hand</span></article>
+            <article><small>COMPANION</small><b>Raspberry Pi 4</b><span>Mounted</span></article>
+            <article><small>TELEMETRY</small><b>SiK radio pair</b><span>Connected</span></article>
+          </div>
+          <p class="build-note">The first milestone is a repeatable, documented bench setup: telemetry visible on the Mac, cameras visible on the Pi, and propulsion unable to start unexpectedly.</p>
+        </div>
+      </section>
+
+      <section class="skills section" id="skills">
+        <p class="eyebrow">04 / SKILLS I’M GROWING</p>
+        <div class="skill-list">
+          <span>Engineering concepts</span><span>Systems thinking</span><span>Hardware inventory</span><span>Telemetry &amp; logging</span><span>Research &amp; prototyping</span><span>HTML / CSS / JavaScript</span>
+        </div>
+      </section>
+
+      <section class="now section" id="now">
+        <p class="eyebrow">05 / NOW</p>
+        <div class="now-card">
+          <span class="pulse"></span>
+          <div><small>CURRENTLY EXPLORING</small><h3>Ideas worth building.</h3></div>
+          <p>Growing my portfolio one project at a time. Always open to a good conversation or a new challenge.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <p class="eyebrow">06 / CONNECT</p>
+      <h2>Let’s make<br />something <em>good.</em></h2>
+      <div class="social-links">
+        <a class="email" href="https://github.com/Alan-9123" target="_blank" rel="noreferrer">GitHub / Alan-9123 <span>↗</span></a>
+        <a class="email linkedin" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn / add your profile URL <span>↗</span></a>
+      </div>
+      <p class="copyright">© <span id="year"></span> ALAN SUN</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
